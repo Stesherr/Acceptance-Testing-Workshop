@@ -10,8 +10,8 @@ Feature: List Lista de tareas pendientes
         Then the list size is greater than zero
 
     Scenario: Mark a task as completed
-        Given the list has four elements la lista tiene cuatro elementos
-        When the user chooses option "3" el usuario escogio la opcion "3"
+        Given the list has four elements
+        When the user chooses option "3"
         When the user chooses task "2"
         Then the list no longer contains task “2”
 
