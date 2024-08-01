@@ -17,7 +17,7 @@ def  step_impl(context, option):
     assert option == "5"
 
 
-@when('the user chooses task "{option}"')
+@when('the user go for task "{option}"')
 def  step_impl(context, option):
     assert option == "2"
 
@@ -28,5 +28,5 @@ def  step_impl(context, name):
 
 @then('the task in "{option}" has the name "{name}"')
 def step_impl(context, option, name):
-    listT[int(option)-1].setname(name)
+    listT[int(option)-1].setName(name)
     #assert listT[option-1] == name, f'task in"{option}" no change'

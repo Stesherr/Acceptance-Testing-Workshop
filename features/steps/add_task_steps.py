@@ -3,7 +3,7 @@ from task import Task
 
 def isOnList(task, listTask):
     for value in listTask:
-        if(value.getNombre() == task.getNombre()):
+        if(value.getName() == task.getName()):
             return True
     return False
 
@@ -19,6 +19,6 @@ def step_impl(context, task):
     list.append(Task(task))
 
 
-@then('la lista debe contener "{task}"')
+@then('the list must contain "{task}"')
 def step_impl(context, task):
     assert isOnList(Task(task), list), f'Task "{task}" is not on the to-do list'

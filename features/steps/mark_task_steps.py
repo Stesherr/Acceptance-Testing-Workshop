@@ -3,7 +3,7 @@ from task import Task
 
 def isOnList(task, listTask):
     for value in listTask:
-        if(value.getNombre() == task.getName()):
+        if(value.getName() == task.getName()):
             return True
     return False
 
@@ -18,7 +18,7 @@ def step_impl(context):
     listT.append(Task("draw"))
 
 
-@when('the user chooses option "{option}"')
+@when('the user takes option "{option}"')
 def step_impl(context, option):
     assert option == "3"
 

@@ -10,7 +10,7 @@ def step_impl(context):
     listT.append(Task("study"))
 
 
-@when('the user chooses option "{option}"')
+@when('the user picks up option "{option}"')
 def  step_impl(context, option):
     assert option == "4"
 
